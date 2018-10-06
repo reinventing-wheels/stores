@@ -11,34 +11,29 @@ yarn add reinventing-wheels/stores
 We need an adapter:
 
 ```ts
-import { FileAdapter } from 'stores'
-
-const fileAdapter = new FileAdapter('store.json')
+import { LocalStorageAdapter } from 'stores/dist/esm/browser'
+const localStorageAdapter = new LocalStorageAdapter('store')
 ```
 
 ```ts
-import { LocalStorageAdapter } from 'stores/dist/esm/browser'
-
-const LocalStorageAdapter = new LocalStorageAdapter('store')
+import { FileAdapter } from 'stores'
+const fileAdapter = new FileAdapter('store.json')
 ```
 
 And also a store:
 
 ```ts
 import { ArrayStore } from 'stores'
-
 const arrayStore = new ArrayStore(adapter)
 ```
 
 ```ts
 import { MapStore } from 'stores'
-
 const mapStore = new MapStore(adapter)
 ```
 
 ```ts
 import { SetStore } from 'stores'
-
 const setStore = new SetStore(adapter)
 ```
 
