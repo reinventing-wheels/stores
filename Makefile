@@ -9,13 +9,15 @@ test: node_modules
 	# jest
 
 clean:
-	rm -rf lib
+	rm -rf dist
 
 build: node_modules
-	tsc -d -m commonjs --outDir lib
+	tsc -d -m esnext --outDir dist/esm
+	tsc -d -m commonjs --outDir dist/cjs
+	rollup -c
 
 release: all
-	git add lib
+	git add dist
 	standard-version -a
 
 node_modules: package.json

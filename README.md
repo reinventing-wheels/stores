@@ -16,6 +16,12 @@ import { FileAdapter } from 'stores'
 const fileAdapter = new FileAdapter('store.json')
 ```
 
+```ts
+import { LocalStorageAdapter } from 'stores/dist/esm/browser'
+
+const LocalStorageAdapter = new LocalStorageAdapter('store.json')
+```
+
 And also a store:
 
 ```ts
