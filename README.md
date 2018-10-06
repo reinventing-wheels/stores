@@ -19,7 +19,7 @@ const fileAdapter = new FileAdapter('store.json')
 ```ts
 import { LocalStorageAdapter } from 'stores/dist/esm/browser'
 
-const LocalStorageAdapter = new LocalStorageAdapter('store.json')
+const LocalStorageAdapter = new LocalStorageAdapter('store')
 ```
 
 And also a store:
