@@ -1,7 +1,7 @@
 import { Store, Adapter } from '../../interfaces'
-import { ExtendedArray } from '../ExtendedArray'
+import { List } from '../List'
 
-export class ArrayStore<V = any> extends ExtendedArray<V> implements Store {
+export class ListStore<V = any> extends List<V> implements Store {
   constructor(private readonly adapter: Adapter) {
     super()
   }

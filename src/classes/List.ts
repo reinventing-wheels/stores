@@ -1,4 +1,4 @@
-export class ExtendedArray<V> extends Array<V> {
+export class List<V> extends Array<V> {
   get size() {
     return this.length
   }

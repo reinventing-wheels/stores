@@ -23,8 +23,8 @@ const fileAdapter = new FileAdapter('store.json')
 And also a store:
 
 ```ts
-import { ArrayStore } from 'stores'
-const arrayStore = new ArrayStore(adapter)
+import { ListStore } from 'stores'
+const listStore = new ListStore(adapter)
 ```
 
 ```ts
