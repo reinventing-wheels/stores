@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const ExtendedArray_1 = require("../ExtendedArray");
-class ArrayStore extends ExtendedArray_1.ExtendedArray {
+const List_1 = require("../List");
+class ListStore extends List_1.List {
     constructor(adapter) {
         super();
         this.adapter = adapter;
@@ -16,4 +16,4 @@ class ArrayStore extends ExtendedArray_1.ExtendedArray {
         return this;
     }
 }
-exports.ArrayStore = ArrayStore;
+exports.ListStore = ListStore;

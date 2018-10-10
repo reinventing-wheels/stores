@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-class ExtendedArray extends Array {
+class List extends Array {
     get size() {
         return this.length;
     }
@@ -25,4 +25,4 @@ class ExtendedArray extends Array {
         this.splice(0);
     }
 }
-exports.ExtendedArray = ExtendedArray;
+exports.List = List;

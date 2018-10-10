@@ -1,5 +1,5 @@
-import { ExtendedArray } from '../ExtendedArray';
-export class ArrayStore extends ExtendedArray {
+import { List } from '../List';
+export class ListStore extends List {
     constructor(adapter) {
         super();
         this.adapter = adapter;

@@ -18,7 +18,7 @@
       }
   }
 
-  class ExtendedArray extends Array {
+  class List extends Array {
       get size() {
           return this.length;
       }
@@ -44,7 +44,7 @@
       }
   }
 
-  class ArrayStore extends ExtendedArray {
+  class ListStore extends List {
       constructor(adapter) {
           super();
           this.adapter = adapter;
@@ -93,7 +93,7 @@
   }
 
   exports.LocalStorageAdapter = LocalStorageAdapter;
-  exports.ArrayStore = ArrayStore;
+  exports.ListStore = ListStore;
   exports.MapStore = MapStore;
   exports.SetStore = SetStore;
 

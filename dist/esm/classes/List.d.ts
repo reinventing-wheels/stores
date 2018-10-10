@@ -1,4 +1,4 @@
-export declare class ExtendedArray<V> extends Array<V> {
+export declare class List<V> extends Array<V> {
     readonly size: number;
     has(value: V): boolean;
     get(index: number): V | undefined;
